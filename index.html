@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>City Gás</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="text-gray-600 body-font">
+      <div
+        class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center"
+      >
+        <a
+          class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
+            ></path>
+          </svg>
+          <span class="ml-3 text-xl">City Gás</span>
+        </a>
+        <nav
+          class="md:ml-auto flex flex-wrap items-center text-base justify-center"
+        >
+          <a class="mr-5 hover:text-gray-900">Inicio</a>
+          <a class="mr-5 hover:text-gray-900">Sobre nós</a>
+          <a class="mr-5 hover:text-gray-900">Serviços</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Sobre nós -->
+    <section class="text-gray-600 body-font">
+      <div
+        class="container mx-auto flex px-5 py-24 items-center justify-center flex-col"
+      >
+        <img
+          class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded"
+          alt="hero"
+          src="./img/01.jpg"
+        />
+        <div class="text-center lg:w-2/3 w-full">
+          <h1
+            class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900"
+          >
+            Serviço de instalação de Gás
+          </h1>
+          <p class="mb-8 leading-relaxed">
+            Sua Segurança – Nossa Missão. Nossa missão é proporcionar soluções
+            seguras e eficientes para o seu projeto e rede de gás. O gás é um
+            produto inflamável que deve ser manuseado e instalado com todo o
+            cuidado. Para tanto, observamos as normas para a instalação e
+            manutenção do sistema de gás, dentre as quais destacamos a NBR
+            13.103, NBR 13.523, NBR 15.358 e NBR 15526. A atenção às normas de
+            instalação de gás oferece a segurança que você tanto espera.
+          </p>
+          <div class="flex justify-center">
+            <!-- START Widget WhastApp hospedagemwordpresspro -->
+            <a
+              href="https://api.whatsapp.com/send?phone=555199270414&text=Olá!%20Gostaria%20de%20mais%20informações%20sobre"
+              id="waurlsite"
+              class="bt-whatsApp"
+              target="_blank"
+              style="
+                right: 25px;
+                position: fixed;
+                width: 60px;
+                height: 60px;
+                bottom: 40px;
+                z-index: 100;
+              "
+            >
+              <img
+                src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pjxzdmcgdmlld0JveD0iMCAwIDI4Ljg3IDI4Ljg3IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxkZWZzPjxzdHlsZT4uY2xzLTF7ZmlsbDojMTg5ZDBlO30uY2xzLTJ7ZmlsbDojZmZmO2ZpbGwtcnVsZTpldmVub2RkO308L3N0eWxlPjwvZGVmcz48dGl0bGUvPjxnIGRhdGEtbmFtZT0iTGF5ZXIgMiIgaWQ9IkxheWVyXzIiPjxnIGRhdGEtbmFtZT0iTGF5ZXIgMSIgaWQ9IkxheWVyXzEtMiI+PHJlY3QgY2xhc3M9ImNscy0xIiBoZWlnaHQ9IjI4Ljg3IiByeD0iNi40OCIgcnk9IjYuNDgiIHdpZHRoPSIyOC44NyIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTcuMDksMjEuODJsLjIzLS44N2MuMjQtLjg5LjQ5LTEuNzcuNzItMi42NmEuNjUuNjUsMCwwLDAsMC0uNDMsNy4zMiw3LjMyLDAsMSwxLDMuMTYsMy4wOC43My43MywwLDAsMC0uNDUsMEM4Ljc3LDIxLjM4LDcuNDksMjEuNzQsNy4wOSwyMS44MlpNOC44LDIwLjE0Yy43My0uMTksMS40LS4zNiwyLjA3LS41NGEuNi42LDAsMCwxLC41LjA3LDYsNiwwLDAsMCw0LjA1Ljc3LDYuMTIsNi4xMiwwLDEsMC02LjMxLTMuMDksMS4yOCwxLjI4LDAsMCwxLC4xNCwxLjE2QzkuMDcsMTksOSwxOS41NSw4LjgsMjAuMTRaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMTYuMzcsMTcuODljLTEuNDMtLjA1LTMuNzEtMS4xOC01LjI3LTMuODlhMi4yLDIuMiwwLDAsMSwuMzQtMi44MSwxLDEsMCwwLDEsLjk0LS4xNGMuMDgsMCwuMTYuMTMuMi4yMi4yMS40Ny40MS45NS41OSwxLjQzLjEuMjYtLjA4LjUtLjQ1LjkyYS4zMi4zMiwwLDAsMCwwLC40Miw1LDUsMCwwLDAsMi41NCwyLjE4LjMuMywwLDAsMCwuMzktLjFjLjU4LS43MS42NC0uOTIsMS0uNzgsMS40OC43MSwxLjU5Ljc0LDEuNi45QTEuNjEsMS42MSwwLDAsMSwxNi4zNywxNy44OVoiLz48L2c+PC9nPjwvc3ZnPg=="
+                alt=""
+                width="60px"
+              />
+            </a>
+            <span
+              id="alertWapp"
+              style="
+                right: 30px;
+                visibility: hidden;
+                position: fixed;
+                width: 17px;
+                height: 17px;
+                bottom: 90px;
+                background: red;
+                z-index: 101;
+                font-size: 11px;
+                color: #fff;
+                text-align: center;
+                border-radius: 50px;
+                font-weight: bold;
+                line-height: normal;
+              "
+            >
+              1
+            </span>
+            <div
+              id="msg1"
+              style="
+                right: 90px;
+                visibility: visible;
+                background: #1ebc59;
+                color: #fff;
+                position: fixed;
+                width: 200px;
+                bottom: 52px;
+                text-align: center;
+                font-size: 13px;
+                line-height: 31px;
+                height: 32px;
+                border-radius: 100px;
+                z-index: 100;
+              "
+            >
+              Fale conosco via Whatsapp
+            </div>
+            <script type="text/javascript">
+              function showIt2() {
+                document.getElementById("msg1").style.visibility = "visible";
+              }
+              setTimeout("showIt2()", 5000);
+              function hiddenIt() {
+                document.getElementById("msg1").style.visibility = "hidden";
+              }
+              setTimeout("hiddenIt()", 15000);
+              function showIt3() {
+                document.getElementById("msg1").style.visibility = "visible";
+              }
+              setTimeout("showIt3()", 25000);
+              msg1.onclick = function () {
+                document.getElementById("msg1").style.visibility = "hidden";
+              };
+              function alertW() {
+                document.getElementById("alertWapp").style.visibility =
+                  "visible";
+              }
+              setTimeout("alertW()", 15000);
+            </script>
+            <!-- END Widget WhastApp -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Serviços -->
+    <section class="text-gray-600 body-font">
+      <div class="container px-5 py-24 mx-auto flex flex-wrap">
+        <div class="flex flex-wrap w-full">
+          <div class="lg:w-2/5 md:w-1/2 md:pr-10 md:py-6">
+            <div class="flex relative pb-12">
+              <div
+                class="h-full w-10 absolute inset-0 flex items-center justify-center"
+              >
+                <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+              </div>
+              <div
+                class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10"
+              >
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-5 h-5"
+                  viewBox="0 0 24 24"
+                >
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                <path d="M22 4L12 14.01l-3-3"></path>
+                </svg>
+              </div>
+              <div class="flex-grow pl-4">
+                <h2
+                  class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider"
+                >
+                  Projeto de Gás
+                </h2>
+                <p class="leading-relaxed">
+                  Determinar os tipos de equipamentos (tubulações, medidores,
+                  válvulas, reguladores de pressão) de acordo com o tipo de gás
+                  (GN - Gás Natural, GLP - Gás Liquefeito de Petróleo) que será
+                  utilizado.
+                </p>
+              </div>
+            </div>
+            <div class="flex relative pb-12">
+              <div
+                class="h-full w-10 absolute inset-0 flex items-center justify-center"
+              >
+                <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+              </div>
+              <div
+                class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10"
+              >
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-5 h-5"
+                  viewBox="0 0 24 24"
+                >
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                <path d="M22 4L12 14.01l-3-3"></path>
+                </svg>
+              </div>
+              <div class="flex-grow pl-4">
+                <h2
+                  class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider"
+                >
+                  Tubulação de Gás
+                </h2>
+                <p class="leading-relaxed">
+                  Escolher o melhor caminho para a tubulação de gás, levando em
+                  consideração a segurança, estética e facilidade de manutenção.
+                </p>
+              </div>
+            </div>
+            <div class="flex relative pb-12">
+              <div
+                class="h-full w-10 absolute inset-0 flex items-center justify-center"
+              >
+                <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+              </div>
+              <div
+                class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10"
+              >
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-5 h-5"
+                  viewBox="0 0 24 24"
+                >
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                <path d="M22 4L12 14.01l-3-3"></path>
+                </svg>
+              </div>
+              <div class="flex-grow pl-4">
+                <h2
+                  class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider"
+                >
+                  Segurança de Gás
+                </h2>
+                <p class="leading-relaxed">
+                  Garantir que as áreas com tubulações de gás tenham ventilação
+                  adequada para evitar acúmulo de gás em caso de vazamento.
+                </p>
+              </div>
+            </div>
+            <div class="flex relative pb-12">
+              <div
+                class="h-full w-10 absolute inset-0 flex items-center justify-center"
+              >
+                <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+              </div>
+              <div
+                class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10"
+              >
+              <svg
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="w-5 h-5"
+              viewBox="0 0 24 24"
+            >
+            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+            <path d="M22 4L12 14.01l-3-3"></path>
+                </svg>
+              </div>
+              <div class="flex-grow pl-4">
+                <h2
+                  class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider"
+                >
+                  Manutenção de Gás
+                </h2>
+                <p class="leading-relaxed">
+                  Substituir componentes com vida útil expirada, como
+                  reguladores de pressão e medidores de gás.
+                </p>
+              </div>
+            </div>
+            <div class="flex relative">
+              <div
+                class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10"
+              >
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-5 h-5"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                  <path d="M22 4L12 14.01l-3-3"></path>
+                </svg>
+              </div>
+              <div class="flex-grow pl-4">
+                <h2
+                  class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider"
+                >
+                  Instalação de Gás
+                </h2>
+                <p class="leading-relaxed">
+                  Utilizar materiais adequados para tubulações e conexões, como
+                  cobre, aço galvanizado ou polietileno, dependendo do tipo de
+                  instalação.
+                </p>
+              </div>
+            </div>
+          </div>
+          <img
+            class="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12"
+            src="./img/02.jpg"
+            alt="step"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="text-gray-600 body-font">
+      <div
+        class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col"
+      >
+        <a
+          class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
+            ></path>
+          </svg>
+          <span class="ml-3 text-xl">City Gás</span>
+        </a>
+        <p
+          class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4"
+        >
+          © 2024 FerreiraDev —
+          <a
+            href="https://twitter.com/knyttneve"
+            class="text-gray-600 ml-1"
+            rel="noopener noreferrer"
+            target="_blank"
+            >@ferreiradev</a
+          >
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
